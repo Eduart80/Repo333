@@ -63,6 +63,7 @@ public class BasePage {
     }
     public void submitIt(By locator, String name){
         WebElement toSend = Web.getDriver().findElement(locator);
+        toSend.clear();
         toSend.sendKeys(name);
         toSend.submit();
     }

@@ -8,4 +8,7 @@ Feature:
     Then select quality 'Very Good' hotel
     When in calendar select Date '15' to checkIn
     And select Date '25' to checkOut
-    * click Continue button
+    *   click Continue button
+    When i click on all inclusive text link
+    And select travel from 'jfk'
+    *   and select destination 'punta cana'

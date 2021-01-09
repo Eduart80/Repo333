@@ -18,6 +18,13 @@ public class LandingPage  extends BasePage {
     By dealsLink =By.id("hdr-deals");
 
 
+    public void url() {
+        //get current url
+        String urlPage = Web.getDriver().getCurrentUrl();
+        String getTitle = Web.getDriver().getTitle();
+        System.out.println("This is url "+ urlPage);
+        System.out.println("This is title "+ getTitle);
+    }
 
     // Method to interact with webElement (represent by above Locators)
     public void clickDeals() {

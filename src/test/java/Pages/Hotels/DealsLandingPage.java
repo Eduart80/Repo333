@@ -52,6 +52,7 @@ public class DealsLandingPage extends BasePage {
         for(WebElement divIn : myList){
             if (divIn.getText().contains(name)){
                 System.out.println("list: -> "+divIn.getText());
+
                 submitIt(searchLocation,name);
                 break;
             }
